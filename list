@@ -1,0 +1,36 @@
+# http://jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=233&sca=10e0
+## 문자열1 - 자가진단4
+
+# 문자열을 입력받고 정수를 입력 받아서 문자열의 맨 뒤부터 정수만큼 출력하는 프로그램을 작성하시오.
+#  만약 입력받은 정수가 문자열의 길이보다 크다면 맨 뒤부터 맨 처음까지 모두 출력한다.
+# (문자열 길이는 최대 100자 이하이다. )
+
+# 입력 예
+# korea 3
+
+# 출력 예
+# aer
+
+답:
+# for, if 없이도 가능하다!!!
+myStr, n = input().split()
+print(myStr[-1:-int(n) - 1:-1])
+
+## 문자열2 - 자가진단2
+# http://jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=240&sca=10f0
+
+# 공백을 포함한 문장을 입력 받아서 홀수 번째 단어를 차례로 출력하는 프로그램을 작성하시오.
+#  문장의 길이는 100자 이하이다.
+
+# 입력 예
+# I like you better than him.
+
+# 출력 예
+# I
+# you
+# than
+
+답:
+# for, if 없이도 가능하다!!!
+words = input().split()
+print('\n'.join(words[::2]))
