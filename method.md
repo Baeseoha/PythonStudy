@@ -21,6 +21,10 @@
 
 ` ("PI = {:10.3f}".format(pi)) ` -> PI =      3.142
 
+` f'Language: {lang}, Author: {author}' `
+
+` f'Language: {lang:.2f}, Author: {author}' `
+
 ### map 사용
  ` a, b, c = map(int, input('3개의 정수 입력: ').split()) ` 
  
