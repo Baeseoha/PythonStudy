@@ -78,7 +78,15 @@ list(map(str.upper, list("apple"))) `
 * 각 아이템별 개수 구하기 reduce 파트에 있음
 
 
-
+## for 문 사용 
+range 안엔 숫자만
+`s = input()
+for i in s:
+    print(i)`
+    
+`s = input()
+for i in range(len(s)):
+    print(s[i])`
 
 
 
