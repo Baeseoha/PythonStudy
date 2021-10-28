@@ -1,9 +1,9 @@
 ## 타이타닉, 리스트에 결과값 넣기
 
 
-`  from functools import reduce
-   f = open("../../../dataset/titanic.csv", 'r')
-   lines = f.readlines()
+`  from functools import reduce \n
+   f = open("../../../dataset/titanic.csv", 'r') \n
+   lines = f.readlines() \n
    f.close()
    vive = []
 
