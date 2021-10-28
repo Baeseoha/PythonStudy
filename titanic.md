@@ -7,10 +7,10 @@
    f.close()
    vive = []
 
-   for line in lines[1:]: # 첫 라인 제거
+   for line in lines[1:]:  첫 라인 제거
 
-       line = line.split(",") # line 을 , (콤마) 로 쪼개기 (split())
-       line = line[1:3] # 생존여부, 객실등급 데이터 추출 ([1],[2]번째 데이타)
+       line = line.split(",") line 을 , (콤마) 로 쪼개기 (split())
+       line = line[1:3]  생존여부, 객실등급 데이터 추출 ([1],[2]번째 데이타)
        vive.append(line)
 
    print(vive)
