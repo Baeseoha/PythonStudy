@@ -1,10 +1,14 @@
 ## 타이타닉, 리스트에 결과값 넣기
 
 
-`  from functools import reduce \n
-   f = open("../../../dataset/titanic.csv", 'r') \n
-   lines = f.readlines() \n
+`  from functools import reduce
+
+   f = open("../../../dataset/titanic.csv", 'r')
+   
+   lines = f.readlines()
+   
    f.close()
+   
    vive = []
 
    for line in lines[1:]:  첫 라인 제거
