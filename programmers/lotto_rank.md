@@ -1,6 +1,7 @@
 # 로또의 최고 순위와 취저 순위
 
 ## 문제
+
 로또 6/45(이하 '로또'로 표기)는 1부터 45까지의 숫자 중 6개를 찍어서 맞히는 대표적인 복권입니다. 아래는 로또의 순위를 정하는 방식입니다. 
 1 순위	당첨 내용
 1	6개 번호가 모두 일치
@@ -50,18 +51,26 @@ lottos	win_nums	result
 입출력 예 #3
 민우가 구매한 로또의 번호와 당첨 번호가 모두 일치하므로, 최고 순위와 최저 순위는 모두 1등입니다.
 
-`def solution(lottos, win_nums):
+## 답
+
+``` python
+    def solution(lottos, win_nums):
     answer = []
     
+    # 하나 맞출 때마다 1등씩 올라감
     win = 6
     lose = 6
     # 최고의 점수
+    # 내가 넣은 lottos 번호와 win_nums 돌아가며 비교
     for lotto in lottos:
+        # 0일때 1등씩 올라감
         if lotto == 0:
             win -= 1
+        # 0 이아니고 맞출 때
         for win_num in win_nums:
             if lotto == win_num and lotto != 0:
                 win -= 1
+    # 다 틀렸을 때 6
     if win != 6:
         win += 1
     answer.append(win)
@@ -70,10 +79,12 @@ lottos	win_nums	result
         for win_num in win_nums:
             if lotto == win_num:
                 lose -= 1
+    # 다 틀렸을 때
     if lose != 6:
         lose += 1
     answer.append(lose)
-    return answer`
+    return answer
+    ```
 
 
 
