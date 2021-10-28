@@ -1,5 +1,13 @@
 # numpy
 
+## scalar
+Scalar : 0차원 array (단일값)
+
+Vector : 1차원 array
+
+Matrix : 2차원 array
+
+Tensor : 3차원(이상) array
 - 1 차원 array(벡터) 생성
 `x = np.array([1, 2, 3])`
 
