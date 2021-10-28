@@ -1,7 +1,8 @@
 ## 타이타닉, 리스트에 결과값 넣기
 
 
-```  from functools import reduce
+``` python 
+   from functools import reduce
 
    f = open("../../../dataset/titanic.csv", 'r')
    
@@ -57,4 +58,5 @@
 
    print(f' 1등급] 총 {vive1}명, 생존 {s1} 명, 생존률{(s1/vive1) * 100:.2f}%')
    print(f' 2등급] 총 {vive1}명, 생존 {s1} 명, 생존률{(s2/vive2) * 100:.2f}%')
-   print(f' 3등급] 총 {vive1}명, 생존 {s1} 명, 생존률{(s3/vive3) * 100:.2f}%') ```
+   print(f' 3등급] 총 {vive1}명, 생존 {s1} 명, 생존률{(s3/vive3) * 100:.2f}%') 
+   ```
